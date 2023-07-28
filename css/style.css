@@ -116,8 +116,6 @@ p{
 .projetos-description{
     width: 100%;
     color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -131,6 +129,16 @@ p{
 }
 
 @media screen and (max-width: 582px) {
+    .projetos{
+        display: block;
+    }
+
+    .projetos-description{
+        text-align: justify;
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+
     .projetos-img{
         display: none;
     }
