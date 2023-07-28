@@ -12,17 +12,45 @@
 <body>
     <header>
         <nav>
-            <div class="vini-buttons" id="home" onclick="redirect('home')">Home</div>
-            <div class="vini-buttons" id="links" onclick="redirect('links')">Links</div>
-            <div class="vini-buttons" id="about" onclick="redirect('about')">Sobre Mim</div>
+            <div class="vini-buttons" id="home" onclick="port_redirect('localSite','/')">Home</div>
+            <div class="vini-buttons" id="links" onclick="port_redirect('localSite','/links')">Links</div>
+            <div class="vini-buttons" id="about" onclick="port_redirect('localSite','/about')">Sobre Mim</div>
         </nav>
     </header>
     <img src="/assets/img/profile.png" alt="Vinícius Picture" class="vini-pic">
     <p>Vinicgobbi</p>
     <section>
-        <div class="projects-title"><h2 style="color: #fff;">Projetos</h2></div>
+        <div>
+            <h2 style="color: #fff; text-align: center;">Projetos</h2>
+        </div>
         <nav>
-            <p style="color: #fff;">O projeto ainda não está pronto, seja paciente</p>
+            <div class="projetos" onclick="port_redirect('github', 'blog')">
+                <div class="projetos-image">
+                    <img src="/assets/img/vini-blog.png" class="projetos-img">
+                </div>
+                <div class="projetos-content">
+                    <div class="projetos-title">
+                        <h2>Vini Blog</h2>
+                    </div>
+                    <div class="projetos-description">
+                        O Vini Blog surgiu como uma ideia de um lugar onde eu pudesse falar sobre tecnologia e dar minha opinião sobre determinados assuntos, um lugar onde eu pudesse ser eu mesmo
+                    </div>
+    
+                </div>
+            </div>
+            <div class="projetos" onclick="port_redirect('github', 'vini-bot')">
+                <div class="projetos-image">
+                    <img src="/assets/img/vini-bot.png" class="projetos-img">
+                </div>
+                <div class="projetos-content">
+                    <div class="projetos-title">
+                        <h2>Vini Bot</h2>
+                    </div>
+                    <div class="projetos-description">
+                        O Vini Bot foi um projeto de trabalho da faculdade, construído com python e a biblioteca discord.py ele possui alguns comandos interessantes!
+                    </div>    
+                </div>
+            </div>
         </nav>
     </section>
     <script src="/javascript/index.js"></script>
