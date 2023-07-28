@@ -104,6 +104,7 @@ p{
 
 .projetos-content{
     width: 100%;
+    user-select: none;
 }
 
 .projetos-title{
