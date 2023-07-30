@@ -12,6 +12,10 @@ header{
     user-select: none;
 }
 
+section{
+    height: 100%;
+}
+
 footer{
     margin-top: 20px;
     color: white;
@@ -93,18 +97,6 @@ p{
     transition: 0.3s;
 }
 
-.projetos:hover{
-    background-color: #fff;
-}
-
-.projetos:hover .projetos-title{
-    color: #282828;
-}
-
-.projetos:hover .projetos-description{
-    color: #282828;
-}
-
 .projetos-content{
     width: 100%;
     user-select: none;
@@ -129,6 +121,26 @@ p{
     height: 200px;
     width: 200px;
     object-fit: cover;
+}
+
+.vini-projects-buttons{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    color: #282828;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.vini-projects-buttons:hover{
+    background: #282828;
+    color: #fff;
 }
 
 @media screen and (max-width: 582px) {
