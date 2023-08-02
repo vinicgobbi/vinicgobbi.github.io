@@ -1,0 +1,258 @@
+
+body{
+    background-color: #262626 !important;
+}
+
+p, li{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vini-menu{
+    background-color: #262626;
+    margin-left: 10px;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 900;
+}
+
+.vini-bg{
+    background-color: #262626 !important;
+}
+
+.vini-menu-title{
+    padding-right: 10px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.vini-menu-link{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.vini-menu-link:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #005ea2;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.vini-menu-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.vini-menu-link:hover{
+    color: #005ea2;
+}
+
+.vini-full-height{
+    height: 100vh;
+}
+
+.vini-link{
+    user-select: none;
+    text-decoration: none;
+    color: #005ea2;
+}
+
+.vini-link:hover{
+    text-decoration: underline;
+}
+
+.vini-text{
+    font-size: 20px;
+}
+
+.vini-title{
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    font-size: 80px;
+}
+
+.text-margin{
+    margin-left: 180px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.vini-projects-title{
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #005ea2;
+    font-size: 30px;
+    text-align: center;
+}
+
+.vini-projects-img{
+    width: 286px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.vini-projects-button{
+    background-color: #005ea2;
+    padding: 10px 10px 10px 10px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid #005ea2;
+    color: #262626;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.vini-projects-button:hover{
+    color: #005ea2;
+    background-color: #262626;
+}
+
+.vini-projects-button:hover ion-icon{
+    color: #005ea2;
+}
+
+.vini-projects-content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ion-icon{
+    color: #262626;
+}
+
+.contact-buttons{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #005ea2;
+    border-radius: 50%;
+    padding: 5px 5px 5px 5px;
+    background-color: #005ea2;
+    transition: 0.3s;
+}
+
+.contact-buttons:hover{
+    background-color: #262626;
+    color: #005ea2;
+}
+
+.vini-about-title{
+    font-family: 'Times New Roman', Times, serif;
+    color: #005ea2;
+    font-size: 30px;
+}
+
+.vini-card{
+    margin: 10px 10px 10px 10px;
+    width: 20rem;
+    border: 2px solid #005ea2;
+    position:static;
+}
+
+.vini-img{
+    width: 200px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+ul li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    top: 7px;
+    left: 0;
+    background-color: rgb(0, 94, 162);
+}
+
+.vini-menu-mobile-button{
+    display: none;
+    color: #262626;
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    border: 2px solid rgb(0, 94, 162);
+    border-radius: 50%;
+    background-color: rgb(0, 94, 162);
+    transition: 0.3s;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 1000;
+}
+
+
+.vini-menu-mobile{
+    background-color: #373737;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    padding: 80px 50px 10px;
+    transition: 0.5s ease-out;
+    z-index: 999;
+}
+
+.vini-menu-mobile-is-closed{
+    left: -200px;
+}
+
+.vini-menu-mobile-is-open{
+    left: 0px;
+}
+
+.vini-menu-mobile-link{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+
+.vini-overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 94, 162, 0.5);
+    z-index: 998;
+    transition: 0.5s;
+}
+
+.vini-is-active{
+    display: block;
+}
+
+@media screen and (max-width: 784px) {
+    .vini-menu{
+        display: none;
+    }
+    .vini-menu-mobile-button{
+        display: block;
+    }
+}

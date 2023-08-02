@@ -4,62 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Vinícius">
-    <meta name="description" content="Meu Portfólio!">
+    <meta name="description" content="My Portfolio!">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Portfólio</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Portfolio</title>
 </head>
 <body>
+
+    <div class="vini-overlay"></div>
+
     <header>
-        <nav>
-            <div class="vini-buttons" id="home" onclick="port_redirect('localSite','/')">Home</div>
-            <div class="vini-buttons" id="links" onclick="port_redirect('localSite','/links')">Links</div>
-            <div class="vini-buttons" id="about" onclick="port_redirect('localSite','/about')">About-me</div>
+        <nav class="vini-menu">
+            <a class="vini-menu-title">Portfolio</a>
+            <a class="vini-menu-link" href="#">Home</a>
+            <a class="vini-menu-link" href="#projects">Projects</a>
+            <a class="vini-menu-link" href="#about">About-me</a>
         </nav>
+
     </header>
-    <img src="/assets/img/profile.png" alt="Vinícius Picture" class="vini-pic">
-    <p>Vinicgobbi</p>
-    <section>
-        <div>
-            <h2 style="color: #fff; text-align: center;">Projects</h2>
-        </div>
-        <nav>
-            <div class="projetos">
-                <div class="projetos-image">
-                    <img src="/assets/img/vini-blog.png" class="projetos-img">
-                </div>
-                <div class="projetos-content">
-                    <div class="projetos-title">
-                        <h2>Vini Blog</h2>
-                    </div>
-                    <div class="projetos-description">
-                        The Vini Blog came about as an idea for a place where I could talk about technology and give my opinion on certain subjects.
-                    </div>
-                    <div class="vini-projects-buttons" onclick="port_redirect('github', 'blog')">Source Code</div>  
-                    <div class="vini-projects-buttons" onclick="port_redirect('githubPages', 'blog')">Website</div>  
+
+    <div onclick="toggleMenu()">
+        <ion-icon class="vini-menu-mobile-button" name="menu"></ion-icon>
+    </div>
     
+    <nav class="vini-menu-mobile vini-menu-mobile-is-closed">
+        <a class="vini-menu-mobile-link" onclick="toggleMenu()" href="#">Home</a>
+        <a class="vini-menu-mobile-link" onclick="toggleMenu()" href="#projects">Projects</a>
+        <a class="vini-menu-mobile-link" onclick="toggleMenu()" href="#about">About-me</a>
+    </nav>
+
+    <section class="vini-full-height ">
+        <div class="container-fluid"">
+            <div class="row justify-content-center text-center">
+                <div class="col-sm-12 col-lg-4 col-md-10" style="margin-top: 10%;">
+                    <h2 id="" class="vini-title">Hello, i'm Vinícius!</h1>
+                    <p>Welcome to my Portfolio</p>
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-4" style="margin-top: 10%;">
+                    <img class="vini-img" src="/assets/img/profile.png" alt="Vinícius Picture">
                 </div>
             </div>
-            <div class="projetos">
-                <div class="projetos-image">
-                    <img src="/assets/img/vini-bot.png" class="projetos-img">
-                </div>
-                <div class="projetos-content">
-                    <div class="projetos-title">
-                        <h2>Vini Bot</h2>
-                    </div>
-                    <div class="projetos-description">
-                        Vini Bot was a college work project, built with python and the discord.py library it has some interesting commands!
-                    </div>
-                    <div class="vini-projects-buttons" onclick="port_redirect('github', 'vini-bot')">Source Code</div>    
-                </div>
-            </div>
-        </nav>
+        </div>
     </section>
-    <footer>
-        Made with ❤️ by Vinícius
-        <p>The Source Code are <a href="https://github.com/vinicgobbi/vinicgobbi.github.io">here</a></p>
-    </footer>
-    <script src="/js/index.js"></script>
+    <section class="vini-projects">
+            <h2 id="projects" class="vini-title text-center">Projects</h2>
+
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="card vini-bg vini-card" style="">
+                        <img class="img-card-top vini-projects-img" src="/assets/img/vini-blog.png" alt="Vini Blog">
+                        <div class="card-body">
+                            <h5 class="card-title vini-projects-title">Vini Blog</h5>
+                            <p class="card-text">
+                                The Vini Blog came about as an idea for a place where I could talk about technology and give my opinion on certain subjects.
+                            </p>
+                            <div style="text-align: center;">
+                                <a class="vini-projects-button" href="https://vinicgobbi.github.io/blog">Website <ion-icon name="share-alt"></ion-icon></a>        
+                                <a class="vini-projects-button" href="https://github.com/vinicgobbi/blog">Source Code <ion-icon name="logo-github"></ion-icon></a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vini-bg vini-card" style="width: 20rem;">
+                        <img class="img-card-top vini-projects-img" src="/assets/img/vini-bot.png" alt="Vini Bot help Command">
+                        <div class="card-body">
+                            <h5 class="card-title vini-projects-title">Vini Bot</h5>
+                            <p class="card-text">
+                                Vini Bot was a college work project, built with python and the discord.py library it has some interesting commands!
+                            </p>
+                            <div style="text-align: center;">
+                                <a class="vini-projects-button " href="https://github.com/vinicgobbi/vini-bot">Source Code <ion-icon name="logo-github"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vini-bg vini-card" style="width: 20rem;">
+                        <img class="img-card-top vini-projects-img" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title vini-projects-title">An awesome project...</h5>
+                            <p class="card-text">
+                                A new project are coming here, please wait... Be patient
+                            </p>
+                            <div style="text-align: center;">
+                                <a class="vini-projects-button" href="#projects">Website <ion-icon name="share-alt"></ion-icon></a>        
+                                <a class="vini-projects-button" href="#projects">Source Code <ion-icon name="logo-github"></ion-icon></a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vini-bg vini-card" style="width: 20rem;">
+                        <img class="img-card-top vini-projects-img" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title vini-projects-title">An awesome project...</h5>
+                            <p class="card-text">
+                                A new project are coming here, please wait... Be patient
+                            </p>
+                            <div style="text-align: center;">
+                                <a class="vini-projects-button" href="#projects">Website <ion-icon name="share-alt"></ion-icon></a>        
+                                <a class="vini-projects-button" href="#projects">Source Code <ion-icon name="logo-github"></ion-icon></a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vini-bg vini-card" style="width: 20rem;">
+                        <img class="img-card-top vini-projects-img" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title vini-projects-title">An awesome project...</h5>
+                            <p class="card-text">
+                                A new project are coming here, please wait... Be patient
+                            </p>
+                            <div style="text-align: center;">
+                                <a class="vini-projects-button" href="#projects">Website <ion-icon name="share-alt"></ion-icon></a>        
+                                <a class="vini-projects-button" href="#projects">Source Code <ion-icon name="logo-github"></ion-icon></a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vini-bg vini-card" style="width: 20rem;">
+                        <img class="img-card-top vini-projects-img" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title vini-projects-title">An awesome project...</h5>
+                            <p class="card-text">
+                                A new project are coming here, please wait... Be patient
+                            </p>
+                            <div style="text-align: center;">
+                                <a class="vini-projects-button" href="#projects">Website <ion-icon name="share-alt"></ion-icon></a>        
+                                <a class="vini-projects-button" href="#projects">Source Code <ion-icon name="logo-github"></ion-icon></a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <h2 id="about" class="vini-title text-center">About-me</h2>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-3 offset-lg-1 order-1 text-center">
+                    <h2 class="vini-about-title">Hello Again</h2>
+                    <p>
+                        My name is Vinícius, i'm studying Computer Science at <a class="vini-link" href="https://faesa.br" target="_blank">FAESA</a>.<br>
+                        I love Backend, and i studying C# (Csharp), to make first API with Dotnet!<br>
+                        I intend to become a Full Stack over time, I'm in the 2nd period of college, I love retro games, and coding in my spare time
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-1 order-2 text-center">
+                    <h2 class="vini-about-title">Certificates and awards:</h2>
+                    <ul class="certificates" style="display: inline-block; text-align: left;">
+                        <li >Privacidade e Proteção de Dados (LGPD)</li>
+                        <li >INTROCOMP - INTRODUÇÃO À COMPUTAÇÃO</li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-3 offset-lg-1 order-1 text-center" style="margin-bottom: 30px;">
+                    <h2 class="vini-about-title">Contact-me:</h2>
+                    <a href="https://github.com/vinicgobbi" target="_blank"><ion-icon class="contact-buttons" name="logo-github"></ion-icon></a>
+                    <a href="https://instagram.com/vinicgobbi" target="_blank"><ion-icon class="contact-buttons" name="logo-instagram"></ion-icon></a>
+                    <a href="https://linkedin.com/in/vinicgobbi" target="_blank"><ion-icon class="contact-buttons" name="logo-linkedin"></ion-icon></a>
+                    <a href="mailto:vinicius.cgobbi2004@gmail.com" target="_blank"><ion-icon class="contact-buttons" name="mail"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>
