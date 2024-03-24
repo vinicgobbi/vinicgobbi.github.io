@@ -252,6 +252,9 @@ ul li::before {
     .vini-menu{
         display: none;
     }
+    .vini-title{
+        margin-top: 20%;
+    }
     .vini-menu-mobile-button{
         display: block;
     }
