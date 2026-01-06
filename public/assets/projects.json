@@ -19,6 +19,16 @@
     ]
   },
   {
+    "titulo": "Infraestrutura e DevOps (Homelab)",
+    "descricao": "Gestão de servidor Ubuntu Server rodando serviços como Apache, Pi-Hole, Plex e Cockpit",
+    "imagem": "./assets/ubuntu_server.png",
+    "badges": [
+      "https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white",
+      "https://img.shields.io/badge/pihole-%2396060C.svg?style=for-the-badge&logo=pi-hole&logoColor=white",
+      "https://img.shields.io/badge/plex-%23E5A00D.svg?style=for-the-badge&logo=plex&logoColor=white"
+    ]
+  },
+  {
     "titulo": "Portfólio Pessoal",
     "descricao": "Este próprio site! Criado para ser meu cartão de visitas digital, mostrando minhas habilidades e projetos.",
     "imagem": "./assets/portfolio_pessoal.png",
