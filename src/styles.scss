@@ -3,3 +3,7 @@
 @use 'bootstrap/scss/bootstrap';
 @use "bootstrap-icons/font/bootstrap-icons.css";
 @use 'devicon/devicon.min.css';
+
+:root {
+  font-display: swap;
+}
