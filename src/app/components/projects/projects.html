@@ -15,18 +15,30 @@
             <p class="card-text flex-grow-1">{{ projeto.descricao }}</p>
 
             <div class="mb-3">
-              <img *ngFor="let badge of projeto.badges" [src]="badge" alt="tecnologia" class="me-1 mb-1"
-                style="height: 28px;" />
+              <img *ngFor="let badge of projeto.badges" [src]="badge" alt="tecnologia" class="me-1 mb-1" style="height: 28px;" />
+            </div>
+
+            <div class="mb-4" *ngIf="projeto.contribuidores?.length">
+              <p class="mb-2 text-muted small">Contribuidores:</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a *ngFor="let contribuidor of projeto.contribuidores"
+                   [href]="'https://github.com/' + contribuidor"
+                   target="_blank"
+                   [title]="contribuidor">
+                  <img [src]="'https://github.com/' + contribuidor + '.png'"
+                       class="rounded-circle border border-secondary"
+                       style="width: 35px; height: 35px; object-fit: cover;"
+                       [alt]="contribuidor">
+                </a>
+              </div>
             </div>
 
             <div class="mt-auto">
-              <a *ngIf="projeto.links?.website" [href]="projeto.links.website" target="_blank"
-                class="btn btn-primary me-2">
+              <a *ngIf="projeto.links?.website" [href]="projeto.links.website" target="_blank" class="btn btn-primary me-2">
                 <i class="bi bi-box-arrow-up-right"></i> Acessar Aplicação
               </a>
 
-              <a *ngIf="projeto.links?.github" [href]="projeto.links.github" target="_blank"
-                class="btn btn-outline-light">
+              <a *ngIf="projeto.links?.github" [href]="projeto.links.github" target="_blank" class="btn btn-outline-light">
                 <i class="bi bi-github"></i> Repositório
               </a>
             </div>
