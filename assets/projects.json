@@ -1,5 +1,21 @@
 [
   {
+    "titulo": "Simulador do ENEM",
+    "descricao": "Sistema desenvolvido para auxiliar o aluno a simular descontos com base na nota do ENEM, contando com integração ao RD Station para captação de leads.",
+    "imagem": "./assets/projects/simulador_enem.png",
+    "badges": [
+      "https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&logo=symfony&logoColor=white",
+      "https://img.shields.io/badge/sql%20server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"
+    ],
+    "contribuidores": [
+      "vinicgobbi",
+      "nascimentodavi"
+    ],
+    "links": {
+      "website": "https://www.simuladorenem.faesa.br"
+    }
+  },
+  {
     "titulo": "Instrumentos Avaliativos",
     "descricao": "Sistema para gerenciar notas e acompanhar o desempenho dos alunos de medicina da FAESA. Desenvolvido com uma API robusta em Laravel e interface dinâmica em React.",
     "imagem": "./assets/projects/instrumentos_avaliativos.png",
@@ -8,7 +24,10 @@
       "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
       "https://img.shields.io/badge/sql%20server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"
     ],
-    "contribuidores": ["vinicgobbi", "nascimentodavi"],
+    "contribuidores": [
+      "vinicgobbi",
+      "nascimentodavi"
+    ],
     "links": {}
   },
   {
@@ -19,27 +38,50 @@
       "https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white",
       "https://img.shields.io/badge/sql%20server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"
     ],
-    "contribuidores": ["vinicgobbi", "nascimentodavi"],
+    "contribuidores": [
+      "vinicgobbi",
+      "nascimentodavi"
+    ],
+    "links": {}
+  },
+  {
+    "titulo": "Sistema de Agendamentos Odontologia",
+    "descricao": "Solução para gestão de agendamentos e otimização do controle de horários para a clínica de Odontologia da FAESA.",
+    "imagem": "./assets/projects/agendamento_odontologia.png",
+    "badges": [
+      "https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white",
+      "https://img.shields.io/badge/sql%20server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"
+    ],
+    "contribuidores": [
+      "vinicgobbi",
+      "nascimentodavi",
+      "guilhermebrancocod"
+    ],
     "links": {}
   },
   {
     "titulo": "Single Sign-On (SSO) AVA FAESA",
-    "descricao": "Sistema focado em simplificar o acesso dos alunos ao Ambiente Virtual de Aprendizagem (AVA) da FAESA, integrado à infraestrutura D2L.",
+    "descricao": "Sistema focado em simplificar o acesso dos alunos ao Ambiente Virtual de Aprendizagem (AVA) da FAESA, integrado à infraestrutura D2L através do protocolo SAML.",
     "imagem": "./assets/projects/ssoava.png",
     "badges": [
       "https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white"
     ],
-    "contribuidores": ["vinicgobbi"],
+    "contribuidores": [
+      "vinicgobbi"
+    ],
     "links": {}
   },
   {
     "titulo": "Notificações Automatizadas - FAESA APP",
-    "descricao": "Stored Procedures desenvolvidas em SQL Server com o objetivo de automatizar o envio de notificações de faltas, atualizações de notas e pendências financeiras.",
+    "descricao": "Stored Procedures desenvolvidas em SQL Server para automatizar o envio de notificações de faltas, atualizações de notas e pendências financeiras.",
     "imagem": "./assets/projects/notificacoes.png",
     "badges": [
       "https://img.shields.io/badge/sql%20server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"
     ],
-    "contribuidores": ["vinicgobbi", "nascimentodavi"],
+    "contribuidores": [
+      "vinicgobbi",
+      "nascimentodavi"
+    ],
     "links": {}
   },
   {
@@ -50,7 +92,9 @@
       "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
       "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white"
     ],
-    "contribuidores": ["vinicgobbi"],
+    "contribuidores": [
+      "vinicgobbi"
+    ],
     "links": {
       "github": "https://github.com/vinicgobbi/vinicgobbi.github.io",
       "website": "https://vinicgobbi.dev.br"
