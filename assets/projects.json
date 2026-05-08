@@ -4,8 +4,7 @@
     "descricao": "Sistema desenvolvido para auxiliar o aluno a simular descontos com base na nota do ENEM, contando com integração ao RD Station para captação de leads.",
     "imagem": "./assets/projects/simulador_enem.png",
     "badges": [
-      "https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&logo=symfony&logoColor=white",
-      "https://img.shields.io/badge/sql%20server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"
+      "https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&logo=symfony&logoColor=white"
     ],
     "contribuidores": [
       "vinicgobbi",
