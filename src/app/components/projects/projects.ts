@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbModal, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectsService } from '../../services/projects-service';
+import { Project } from '../../shared/interfaces/project';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +11,7 @@ import { ProjectsService } from '../../services/projects-service';
   styleUrl: './projects.scss'
 })
 export class Projects {
-  projetos: any[] = [];
+  projetos: Project[] = [];
 
   constructor(private projetosService: ProjectsService) {}
 
