@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, HostListener } from '@angular/core';
 import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-navbar',
-  imports: [NgbCollapse, CommonModule],
+  imports: [NgbCollapse],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss'
 })
