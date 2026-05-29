@@ -1,5 +1,22 @@
 [
   {
+    "titulo": "Amigo Indica",
+    "descricao": "Sistema desenvolvido para gerenciar o programa de indicações da FAESA, facilitando a captação de novos alunos através de recomendações.",
+    "imagem": "./assets/projects/amigo_indica.png",
+    "badges": [
+      "https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white",
+      "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+      "https://img.shields.io/badge/sql%20server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"
+    ],
+    "contribuidores": [
+      "vinicgobbi",
+      "nascimentodavi"
+    ],
+    "links": {
+      "website": "https://www.amigoindica.faesa.br"
+    }
+  },
+  {
     "titulo": "Simulador do ENEM",
     "descricao": "Sistema desenvolvido para auxiliar o aluno a simular descontos com base na nota do ENEM, contando com integração ao RD Station para captação de leads.",
     "imagem": "./assets/projects/simulador_enem.png",
