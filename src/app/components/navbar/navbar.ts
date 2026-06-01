@@ -12,7 +12,7 @@ export class Navbar {
   isCollapsed = true;
   activeSection: string = 'header';
 
-  sectionIds: string[] = ['header', 'about', 'experience', 'stacks', 'projects', 'contact'];
+  sectionIds: string[] = ['header', 'about', 'experience', 'stacks', 'projects', 'certifications', 'contact'];
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
