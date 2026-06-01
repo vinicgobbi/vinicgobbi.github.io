@@ -1,0 +1,23 @@
+[
+	{
+		"tipo": "certificação",
+		"anexo": "./assets/certs/mtcna.pdf",
+		"preview": "./assets/certs/mtcna.png",
+		"titulo": "MikroTik Certified Network Associate - MTCNA",
+		"emissor": "MikroTik",
+		"data_emissao": "05-2026",
+		"data_vencimento": "05-2029",
+		"codigo": "2605NA3984",
+		"url": "https://mikrotik.com/certificates"
+	},
+	{
+		"tipo": "curso",
+		"anexo": "./assets/certs/introcomp.pdf",
+		"preview": "./assets/certs/introcomp.png",
+		"titulo": "INTROCOMP - INTRODUÇÃO À COMPUTAÇÃO",
+		"emissor": "UFES",
+		"data_emissao": "10-2021",
+		"codigo": "4972058D9F298011249EF330AEBB82746F4EB0B13",
+		"url": "https://autenticar.ufes.br"
+	}
+]
