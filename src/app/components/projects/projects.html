@@ -33,14 +33,15 @@
               </div>
             </div>
             }
-            <div class="mt-auto">
+
+            <div class="mt-auto d-flex gap-2">
               @if (projeto.links.website) {
-              <a [href]="projeto.links.website" target="_blank" class="btn btn-primary me-2">
+              <a [href]="projeto.links.website" target="_blank" class="btn btn-primary flex-fill">
                 <i class="bi bi-box-arrow-up-right"></i> Acessar Aplicação
               </a>
               }
               @if (projeto.links.github) {
-              <a [href]="projeto.links.github" target="_blank" class="btn btn-outline-light">
+              <a [href]="projeto.links.github" target="_blank" class="btn btn-outline-light flex-fill">
                 <i class="bi bi-github"></i> Repositório
               </a>
               }
