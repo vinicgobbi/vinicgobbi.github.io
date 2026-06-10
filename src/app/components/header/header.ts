@@ -5,8 +5,16 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   imports: [NgOptimizedImage],
   templateUrl: './header.html',
-  styleUrl: './header.scss'
+  styleUrls: ['./header.scss']
 })
 export class Header {
+  public imprimirCV(): void {
+    const oldTitle = document.title;
+    
+    document.title = 'cv-vinicius-cavati-gobbi';
 
+    window.print();
+
+    document.title = oldTitle;
+  }
 }
