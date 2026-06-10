@@ -7,3 +7,113 @@
 :root {
   font-display: swap;
 }
+
+@media print {
+  /* 1. Reset Global e Ajuste de Margens */
+  html, body {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.4 !important;
+  }
+  
+  .container, .container-fluid {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .my-5, .py-5, .my-4, .py-4 { 
+    margin-top: 5px !important; 
+    margin-bottom: 5px !important; 
+    padding-top: 0 !important; 
+    padding-bottom: 0 !important; 
+  }
+
+  /* 2. Remoção Absoluta de Elementos Web / Não-Essenciais */
+  #main-navbar, 
+  footer, 
+  app-contact, 
+  app-stacks, 
+  .no-print, 
+  #profile-picture, 
+  .btn, 
+  .badge,
+  .card-img-top, 
+  #profile-info-2, 
+  app-projects .mb-3, 
+  app-projects .mb-4, 
+  app-certs .flex-grow-1, 
+  app-certs .mt-auto,
+  app-experience ul li i { /* Esconde os ícones de seta azul */
+    display: none !important; 
+  }
+
+  /* 3. Controle Estrito de Quebra de Página (Evita Títulos Órfãos e Cortes) */
+  .col, .card, .row > div, app-experience .row, app-certs .col, app-projects .col {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  h2, h4, h5, h6, .text-center.mb-5 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    color: #000 !important;
+    font-weight: bold !important;
+  }
+
+  h2 {
+    font-size: 13pt !important;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+    margin-top: 14px !important;
+    margin-bottom: 6px !important;
+    text-align: left !important;
+  }
+
+  /* 4. Cabeçalho Otimizado com Contato em Duas Linhas */
+  #header {
+    flex-direction: row !important;
+    gap: 0 !important;
+  }
+  #profile-info { text-align: left !important; }
+  #profile-info h2 { border: 0; padding: 0; margin: 0 !important; font-size: 19pt !important; }
+  #profile-info h5 { font-size: 10.5pt !important; margin-top: 3px !important; color: #333 !important; }
+  
+  #profile-info-1::after {
+    content: "Cariacica, Espírito Santo - Brasil | vinicius.cgobbi2004@gmail.com | linkedin.com/in/vinicgobbi | github.com/vinicgobbi" !important;
+    display: block !important;
+    white-space: pre-wrap !important;
+    margin-top: 6px !important;
+    font-size: 9pt !important;
+    color: #555 !important;
+    line-height: 1.4 !important;
+  }
+
+  /* 5. Restauração dos Bullet Points Normais */
+  app-experience ul {
+    list-style-type: disc !important;
+    padding-left: 16px !important;
+    margin-top: 4px !important;
+  }
+  app-experience li {
+    display: list-item !important;
+    margin-bottom: 2px !important;
+  }
+
+  /* 6. Cursos e Certificações Minimalistas */
+  app-certs .row { display: block !important; }
+  app-certs .col { margin-bottom: 4px !important; }
+  app-certs .card { border: none !important; background: transparent !important; padding: 0 !important; }
+  app-certs .card-body { padding: 0 !important; }
+  app-certs .card-title { font-size: 10.5pt !important; margin: 0 !important; display: inline-block; }
+  app-certs h6 { display: inline-block !important; font-size: 9.5pt !important; color: #555 !important; margin: 0 0 0 6px !important; font-weight: normal !important; }
+
+  /* 7. Projetos Compactos */
+  app-projects .row { display: block !important; }
+  app-projects .col { margin-bottom: 8px !important; }
+  app-projects .card { border: none !important; background: transparent !important; padding: 0 !important; }
+  app-projects .card-body { padding: 0 !important; }
+  app-projects .card-title { font-size: 10.5pt !important; margin-bottom: 2px !important; }
+  app-projects .card-text { font-size: 9pt !important; color: #444 !important; }
+}
