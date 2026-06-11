@@ -12,14 +12,6 @@
 	},
 	{
 		"tipo": "curso",
-		"anexo": "./assets/certs/curso_mtcre.pdf",
-		"preview": "./assets/certs/curso_mtcre.png",
-		"titulo": "MikroTik Certified Routing Engineer - MTCRE",
-		"emissor": "MikroTik",
-		"data_emissao": "05/2026"
-	},
-	{
-		"tipo": "curso",
 		"anexo": "./assets/certs/introcomp.pdf",
 		"preview": "./assets/certs/introcomp.png",
 		"titulo": "INTROCOMP - INTRODUÇÃO À COMPUTAÇÃO",
