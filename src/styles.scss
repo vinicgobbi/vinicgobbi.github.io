@@ -10,7 +10,9 @@
 
 @media print {
 
-  /* 1. Reset Global e Ajuste de Margens */
+  /* =========================================
+     1. Reset Global e Ajuste de Margens
+     ========================================= */
   html,
   body {
     background-color: #fff !important;
@@ -36,7 +38,9 @@
     padding-bottom: 0 !important;
   }
 
-  /* 2. Remoção Absoluta de Elementos Web / Não-Essenciais */
+  /* =========================================
+     2. Remoção de Elementos Não-Essenciais
+     ========================================= */
   #main-navbar,
   footer,
   app-contact,
@@ -50,12 +54,15 @@
   app-projects .mb-4,
   app-certs .flex-grow-1,
   app-certs .mt-auto,
-  app-experience ul li i {
-    /* Esconde os ícones de seta azul */
+  app-experience ul li i,
+  app-certs .text-center p,
+  app-projects .text-center p {
     display: none !important;
   }
 
-  /* 3. Controle Estrito de Quebra de Página (Evita Títulos Órfãos e Cortes) */
+  /* =========================================
+     3. Controle Estrito de Quebra de Página
+     ========================================= */
   .col,
   .card,
   .row>div,
@@ -86,7 +93,9 @@
     text-align: left !important;
   }
 
-  /* 4. Cabeçalho Otimizado com Contato em Duas Linhas */
+  /* =========================================
+     4. Cabeçalho Otimizado e Contato
+     ========================================= */
   #header {
     flex-direction: row !important;
     gap: 0 !important;
@@ -109,7 +118,7 @@
     color: #333 !important;
   }
 
-#profile-info-1::after {
+  #profile-info-1::after {
     content: "Cariacica, Espírito Santo - Brasil | vinicius.cgobbi2004@gmail.com | +55 (27) 99756-8805\Alinkedin.com/in/vinicgobbi | github.com/vinicgobbi | vinicgobbi.dev.br" !important;
     display: block !important;
     white-space: pre-wrap !important;
@@ -119,7 +128,16 @@
     line-height: 1.4 !important;
   }
 
-  /* 5. Restauração dos Bullet Points Normais */
+  /* =========================================
+     5. Seção: Sobre Mim
+     ========================================= */
+  #about-me p {
+    color: #000 !important;
+  }
+
+  /* =========================================
+     6. Seção: Experiência
+     ========================================= */
   app-experience ul {
     list-style-type: disc !important;
     padding-left: 16px !important;
@@ -131,7 +149,9 @@
     margin-bottom: 2px !important;
   }
 
-  /* 6. Cursos e Certificações Minimalistas */
+  /* =========================================
+     7. Seção: Cursos e Certificações
+     ========================================= */
   app-certs .row {
     display: block !important;
   }
@@ -146,7 +166,6 @@
     padding: 0 !important;
   }
 
-  /* Desativa o flexbox do body e da div do título para permitir que fiquem na mesma linha */
   app-certs .card-body {
     padding: 0 !important;
     display: block !important;
@@ -162,12 +181,6 @@
     display: inline !important;
   }
 
-  /* Remove o ícone de prédio da empresa */
-  app-certs h6 i {
-    display: none !important;
-  }
-
-  /* Adiciona o " - " e posiciona a empresa na frente do título */
   app-certs h6 {
     display: inline !important;
     font-size: 10.5pt !important;
@@ -181,7 +194,9 @@
     color: #000 !important;
   }
 
-  /* 7. Projetos Compactos */
+  /* =========================================
+     8. Seção: Projetos
+     ========================================= */
   app-projects .row {
     display: block !important;
   }
@@ -210,7 +225,9 @@
     color: #444 !important;
   }
 
-  /* Ajuste do container principal */
+  /* =========================================
+     9. Seção: Stacks / Habilidades
+     ========================================= */
   app-stacks #profile-stacks {
     margin: 10px 0 !important;
     padding: 0 !important;
@@ -229,14 +246,12 @@
     display: block !important;
   }
 
-  /* Transforma os grupos em linhas de texto contínuo */
   app-stacks .stack-group {
     display: block !important;
     margin-bottom: 4px !important;
     text-align: left !important;
   }
 
-  /* Formata o título da categoria (ex: "Linguagens: ") */
   app-stacks .stack-group-title {
     display: inline !important;
     font-size: 9.5pt !important;
@@ -257,25 +272,17 @@
     display: inline !important;
   }
 
-  /* Remove o ícone */
   app-stacks i[title]::before {
     content: none !important;
   }
 
-  /* Adiciona o texto e a vírgula para separar os itens */
   app-stacks i[title]::after {
     content: attr(title) ", ";
     font-size: 9.5pt !important;
     color: #333 !important;
   }
 
-  /* Substitui a vírgula por um ponto no último item da lista */
   app-stacks i[title]:last-child::after {
     content: attr(title) ".";
-  }
-
-  app-certs .text-center p,
-  app-projects .text-center p {
-    display: none !important;
   }
 }
